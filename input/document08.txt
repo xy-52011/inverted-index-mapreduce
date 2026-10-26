@@ -1,0 +1,11 @@
+Information Retrieval Systems
+
+Information retrieval is the activity of obtaining information system resources that are relevant to an information need from a collection of those resources. Searches can be based on full text or other content based indexing. Information retrieval is the science of searching for information in a document, searching for documents themselves, and also searching for the metadata that describes data.
+
+An information retrieval system is a system that provides access to books, journals and other documents. It stores and manages those documents and helps users find the information they need. Web search engines are the most visible information retrieval applications, but information retrieval technology is also used in digital libraries, enterprise search, and database systems.
+
+The core process in information retrieval starts with document indexing. Documents are represented by terms or keywords. The inverted index data structure maps each term to the documents that contain it. When a user submits a query, the system uses the index to find matching documents and ranks them by relevance.
+
+Retrieval models determine how documents are ranked. The Boolean model retrieves documents that match exact query terms using logical operators. The vector space model represents documents and queries as vectors in a multidimensional term space and computes similarity scores. Probabilistic models estimate the probability that a document is relevant to a query.
+
+Evaluation of information retrieval systems uses metrics like precision and recall. Precision measures the fraction of retrieved documents that are relevant. Recall measures the fraction of relevant documents that are retrieved. Modern evaluation also considers ranking quality, user satisfaction, and retrieval speed.

@@ -1,0 +1,11 @@
+Search Engine Technology
+
+A search engine is a software system that is designed to carry out web searches. They search the World Wide Web in a systematic way for particular information specified in a textual web search query. The search results are generally presented in a line of results, often referred to as search engine results pages.
+
+Search engines use automated software programs called spiders or crawlers that travel along the web, following links from page to page. The content of each page is then analyzed and indexed, allowing the search engine to quickly retrieve relevant pages when a user enters a query.
+
+The three main components of a search engine are the web crawler, the indexer, and the query processor. The web crawler discovers and fetches web pages. The indexer builds the inverted index from the collected documents. The query processor accepts user queries and uses the index to find matching documents.
+
+When a user enters a query, the search engine looks up the query terms in its inverted index. It retrieves the list of documents containing each term, merges the lists, and ranks the results using algorithms like PageRank. The ranking determines the order in which results appear on the search results page.
+
+Modern search engines support not only keyword searches but also natural language queries, image search, video search, and personalized results based on user history and preferences. The scale of the web requires these systems to process billions of pages efficiently.

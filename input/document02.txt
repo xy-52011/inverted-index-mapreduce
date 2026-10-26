@@ -1,0 +1,11 @@
+Understanding Inverted Index for Search
+
+An inverted index is a database index storing a mapping from content, such as words or numbers, to its locations in a table, or in a document or a set of documents. The purpose of an inverted index is to allow fast full text searches, at a cost of increased processing when a document is first added to the database.
+
+The inverted index is the most popular data structure used in information retrieval systems and search engines. Search engines use inverted indexes to efficiently retrieve documents that contain specific query terms.
+
+There are two main variants of inverted indexes. The first variant contains a list of references to documents for each word. The second variant additionally contains the positions of each word within a document. The latter form offers more functionality like phrase searches but requires more processing power and storage space.
+
+In a typical inverted index, each unique word is mapped to a posting list. The posting list contains document identifiers and term frequency counts. Term frequency indicates how many times a word appears in a given document. This data is essential for ranking search results by relevance.
+
+Building an inverted index involves tokenization, stop word removal, stemming, and counting. Tokenization splits text into individual words. Stop words like the, a, and is are removed because they appear too frequently and carry little meaning.

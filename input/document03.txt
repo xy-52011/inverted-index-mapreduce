@@ -1,0 +1,11 @@
+Hadoop Distributed File System HDFS
+
+HDFS is a distributed file system designed to run on commodity hardware. It has many similarities with existing distributed file systems, but the differences from other distributed file systems are significant. HDFS is highly fault tolerant and is designed to be deployed on low cost hardware.
+
+HDFS provides high throughput access to application data and is suitable for applications that have large data sets. HDFS relaxes a few POSIX requirements to enable streaming access to file system data. HDFS was originally built as infrastructure for the Apache Nutch web search engine project.
+
+An HDFS cluster consists of a single NameNode and a number of DataNodes. The NameNode manages the file system namespace and regulates access to files by clients. The DataNodes are responsible for serving read and write requests from the file system clients. The DataNodes also perform block creation, deletion, and replication upon instruction from the NameNode.
+
+HDFS is designed to reliably store very large files across machines in a large cluster. It stores each file as a sequence of blocks. All blocks in a file except the last block are the same size. Blocks are replicated for fault tolerance. The block size and replication factor are configurable per file.
+
+The HDFS architecture is built around the principle that data processing logic should be located near the data rather than moving data to the processing location. This data locality principle significantly reduces network congestion and improves overall system throughput.

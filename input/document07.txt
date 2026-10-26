@@ -1,0 +1,11 @@
+Big Data Analytics
+
+Big data is a field that treats ways to analyze, systematically extract information from, or otherwise deal with data sets that are too large or complex to be dealt with by traditional data processing application software. Data with many fields offer greater statistical power, while data with higher complexity may lead to a higher false discovery rate.
+
+Big data analysis challenges include capturing data, data storage, data analysis, search, sharing, transfer, visualization, querying, updating, information privacy, and data source. Big data was originally associated with three key concepts called volume, variety, and velocity. The three dimensions describe the scale of data, the different forms of data, and the speed at which data is generated.
+
+The analysis of big data can help organizations make better business decisions and uncover hidden patterns. Data scientists use advanced analytics techniques including machine learning, predictive analytics, and statistical analysis on big data sets. The insights gained from big data can lead to more effective marketing, better customer service, improved operational efficiency, and competitive advantages.
+
+Hadoop and other big data technologies enable organizations to process and store massive amounts of data cost effectively. The distributed nature of these systems allows for horizontal scaling across hundreds or thousands of servers. Open source frameworks like Hadoop, Spark, and Hive have made big data processing accessible to organizations of all sizes.
+
+Data visualization is an important part of big data analytics. Visual tools help analysts understand complex data sets and communicate findings to stakeholders. Common visualization techniques include charts, graphs, dashboards, and interactive data exploration tools.

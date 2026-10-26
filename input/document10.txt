@@ -1,0 +1,11 @@
+Distributed Computing and Data Processing
+
+Distributed computing is a field of computer science that studies distributed systems. A distributed system is a system whose components are located on different networked computers, which communicate and coordinate their actions by passing messages to one another. The components interact with one another in order to achieve a common goal.
+
+Distributed data processing breaks large datasets into smaller pieces that can be processed in parallel across multiple machines. This approach offers several advantages including horizontal scalability, fault tolerance, and faster processing. When one machine is insufficient to handle the data volume, adding more machines increases processing capacity linearly.
+
+MapReduce popularized the distributed data processing paradigm. It provides a simple abstraction that hides the complexity of parallelization, data distribution, load balancing, and fault tolerance. Programmers define map and reduce functions while the framework handles the distributed execution details. This abstraction has been adopted by many subsequent big data systems.
+
+The data processing pipeline in a distributed system starts with data ingestion. Raw data is uploaded to distributed storage such as HDFS. Input data is split into fixed size blocks and distributed across DataNodes. The processing framework schedules compute tasks on nodes where the data resides, minimizing data movement over the network.
+
+Fault tolerance is a key property of distributed data processing systems. If a node fails during processing, the framework detects the failure and reschedules the task on another node. Data blocks are replicated across multiple nodes to ensure no data is lost when hardware fails. These mechanisms allow large clusters to operate reliably even with frequent commodity hardware failures.

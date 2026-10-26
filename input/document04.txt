@@ -1,0 +1,11 @@
+MapReduce Programming Model
+
+MapReduce is a framework for processing parallelizable problems across large datasets using a large number of computers, collectively referred to as a cluster. All map and reduce operations are performed in parallel, although the order of execution depends on the availability of processing nodes.
+
+A map function takes a set of data and converts it into another set of data, where individual elements are broken down into tuples called key value pairs. The reduce function takes the output from a map as input and combines those data tuples into a smaller set of tuples.
+
+The MapReduce framework consists of a single JobTracker and one TaskTracker per cluster node. The JobTracker is responsible for resource management, tracking resource consumption, and scheduling jobs. The TaskTracker is responsible for executing tasks as directed by the JobTracker.
+
+A MapReduce job usually splits the input data set into independent chunks which are processed by the map tasks in a completely parallel manner. The framework sorts the outputs of the maps, which are then input to the reduce tasks. Typically both the input and the output of the job are stored in a file system.
+
+The framework takes care of scheduling tasks, monitoring them, and re executing the failed tasks. This allows programmers without any experience with parallel and distributed systems to easily utilize the resources of a large distributed system.

@@ -1,0 +1,11 @@
+Hadoop Cluster Deployment
+
+A Hadoop cluster is a special type of computational cluster designed specifically for storing and analyzing huge amounts of unstructured data in a distributed computing environment. Such clusters run Hadoop open source software for distributed processing of large datasets. Hadoop clusters are often referred to as shared nothing systems because data is distributed across all nodes.
+
+A basic Hadoop cluster consists of a master node and multiple worker nodes. The master node runs the NameNode, ResourceManager, and JobTracker daemons. Worker nodes run DataNode and NodeManager daemons that handle actual data storage and processing. In production environments, high availability is achieved by setting up a standby master node.
+
+Deploying a Hadoop cluster starts with preparing the hardware and operating system. Nodes should run a supported Linux distribution with consistent versions. Java must be installed on all nodes, and passwordless SSH access should be configured from the master to all workers. Network configuration and DNS resolution are critical for cluster communication.
+
+Hadoop configuration files are stored in the etc hadoop directory. Key configuration files include core site.xml for common settings, hdfs site.xml for HDFS settings, and mapred site.xml for MapReduce settings. The workers file lists all worker node hostnames. Configuration changes must be propagated to all nodes in the cluster.
+
+After configuration, the HDFS filesystem is formatted on the NameNode using the namenode format command. Then HDFS and YARN services are started with the start dfs and start yarn scripts. Cluster health is verified using command line utilities and web user interfaces that show node status and resource usage.
